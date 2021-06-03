@@ -1,0 +1,341 @@
+/* General Code */
+body {
+	height: 100%;
+	display: grid;
+	background-image: url(/images/paper-blog.jpg);
+	background-repeat: no-repeat;
+	margin: 5px;
+	background-size: cover;
+	font-family: 'Dancing Script', cursive;
+	grid-template-rows: 0.5fr minmax(min-content, max-content) 0.5fr;
+	grid-template-areas: "navbar"
+						 "main"
+						 "footer";
+}
+
+div.navbar {
+	grid-area: navbar;
+}
+
+main {
+	grid-area: main;
+}
+
+a.blogs-button {
+	margin-top: 5px;
+	display:inline-block;
+	margin-right:6px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	color: green;
+	font-weight: 700;
+   }
+
+
+h2, h3 {
+	font-weight: bolder;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 40px;
+}
+
+/* Logo/Menu */
+div.logo {
+	top: 0;
+	left: 0;
+	background-color: black;
+	position: absolute;
+	width: 100%;
+}
+
+a.logo {
+	color: wheat;
+	font-size: 25px;
+	text-decoration: none;
+	margin: 0 auto;
+}
+
+a.home, a.story, a.tastes {
+	margin-top: 5px;
+	background-color:grey;
+	width:32%;
+	height:120px;
+	display:inline-block;
+	margin-right:6px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: 900;
+	color: whitesmoke;
+	padding-bottom: 30px;
+   }
+
+a.home:hover, a.story:hover, a.tastes:hover,
+a.home-active, .a.story-active, .a.tastes-active  {
+	margin-top: 5px;
+	background-color:tomato;
+	width:32%;
+	height:120px;
+	display:inline-block;
+	margin-right:6px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 40px;
+	font-weight: 900;
+	color: whitesmoke;
+	padding: 20px;
+   }
+
+/* Home */
+main.blog-home {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.25fr 0.75fr 0.5fr;
+	grid-template-areas:"title		title" 
+						"myself		myself"
+			   			"news		weather";
+}
+
+section.blog-title {
+	grid-area: title;
+	font-size: 40px;
+	font-weight: bolder;
+	text-align: center;
+	background-image: url(/images/blog.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 5px;
+	color: white;
+	background-size:cover;
+	padding: 15px;
+}
+
+section.post-container-myself {
+	grid-area: myself;
+	font-size: 35px;
+	text-align: center;
+	background-image: url(/images/myself-blog.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 5px;
+	color: white;
+	background-size:cover;
+	padding: 15px;
+}
+
+section.post-container-news{
+	grid-area: news;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+object.news {
+	width: 98%;
+	height: 420px;
+	overflow: auto;
+	border: 2px;
+	border-color: grey;
+}
+
+section.post-container-weather{
+	grid-area: weather;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+object.weather {
+	width: 98%;
+	height: 420px;
+	overflow: auto;
+	border: 2px;
+	border-color: grey;
+}
+
+div.footer {
+	grid-area: footer;
+}
+
+/* Tastes */
+main.blog-taste {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.25fr 1fr 1fr;
+	grid-template-areas:"title		title" 
+						"sports		music"
+						"movies		series"
+}
+
+section.blogs-tastes {
+	grid-area: title;
+	font-size: 40px;
+	font-weight: bolder;
+	text-align: center;
+	background-image: url(/images/mytastes-blog.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 5px;
+	color: black;
+	background-size:cover;
+	padding: 15px;
+}
+
+article.post-container-sports {
+	grid-area: sports;
+	font-size: 25px;
+	background-image: url(/images/sports-blog.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 5px;
+	color: black;
+	background-size:cover;
+	padding: 15px;
+}
+
+article.post-container-music {
+	grid-area: music;
+	font-size: 25px;
+	background-image: url(/images/music-blog.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 5px;
+	color: black;
+	background-size:cover;
+	padding: 15px;
+}
+
+article.post-container-movies {
+	grid-area: movies;
+	font-size: 25px;
+	background-image: url(/images/movie-blog.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 5px;
+	color: black;
+	background-size:cover;
+	padding: 15px;
+}
+
+article.post-container-series {
+	grid-area: series;
+	font-size: 25px;
+	background-image: url(/images/series-blog.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 5px;
+	color: gray;
+	background-size:cover;
+	padding: 15px;
+}
+
+/* Story */
+main.blog-story {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.25fr 1fr 1fr;
+	grid-template-areas:"title		title" 
+						"past		tragic"
+						"present	future"
+}
+
+section.blogs-mystory {
+	grid-area: title;
+	font-size: 40px;
+	font-weight: bolder;
+	text-align: center;
+	background-image: url(/images/mystory-blog.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 5px;
+	color: black;
+	background-size:cover;
+	padding: 15px;
+}
+
+article.post-container-past {
+	grid-area: past;
+	font-size: 25px;
+	background-image: url(/images/past-blog.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 5px;
+	color: black;
+	background-size:cover;
+	padding: 15px;
+}
+
+article.post-container-tragedy {
+	grid-area: tragic;
+	font-size: 25px;
+	background-image: url(/images/tragedy-blog.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 5px;
+	background-size:cover;
+	color: whitesmoke;
+	padding: 15px;
+}
+
+article.post-container-present {
+	grid-area: present;
+	font-size: 25px;
+	background-image: url(/images/present-blog.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 5px;
+	color: black;
+	background-size:cover;
+	padding: 15px;
+}
+
+article.post-container-future {
+	grid-area: future;
+	font-size: 25px;
+	background-image: url(/images/future-blog.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 5px;
+	color: white;
+	background-size:cover;
+	padding: 15px;
+}
+
+/* Icons */
+.fa {
+	padding: 20px;
+	font-size: 50px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	bottom: 0;
+	position:relative;
+}
+  
+.fa:hover {
+	opacity: 0.7;
+}
+  
+  
+/* Facebook */
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+  
+/* Twitter */
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+
+/* Youtube */
+.fa-youtube {
+	background: #bb0000;
+	color: white;
+}
+  
+/* Instagram */
+.fa-instagram {
+	background: #125688;
+	color: white;
+}

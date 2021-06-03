@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="main.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');</style> 
+</head>
+<body>
+
+{{!-- Navigation Bar --}}
+{{> navbar }}
+
+{{!-- Main Body --}}
+
+    <main class="blog-home">
+            <section class="blog-title">
+                <h2>My Blog!</h2>
+                <p>Well hello there! I am happy you are here. This little work of art that lays before your eyes is MY first handmade blog. Read, explore, click, and please stay for a while!</p>
+            </section>
+            <section class="post-container-myself">
+                <h2>Myself</h2>
+                <div>
+                <p>Sarah Layden’s The Story I Tell Myself About Myself, winner of the inaugural Sonder Press Chapbook Competition, is an intimate, deftly crafted collection. The fictions housed here, while brief, are delicate and deliberate, each capturing at once the vast, fleeting fragility of our existence and the singular, profound experience of each moment lived.  And while these are stories of abandonment and regret, of desire, guilt and longing, there is love and good intention, faith and wonder here, as well.  Layden crafts her prose with precision and a keen understanding of the nuance of language. Each story is a measured mouthful, sweet and full on the tongue. The Story I Tell Myself About Myself tells the story of all of us, the spectrum of our lives laid bare, our own reflection refracted.</p>
+                </div>
+            </section>
+            <section class="post-container-news">
+                <h3>The News!</h3>
+                <div>
+                <object type="text/html" class="news" data="https://www.clarin.com/politica/trama-secreta-negociacion-pfizer-once-reuniones-sospechosos-idas-vueltas_0_UdX6kkVxk.html" style="overflow:auto">
+                </object>
+                </div>
+                <a href="https://www.clarin.com.ar/" target="_blank" class="blogs-button">Leer más</a>
+            </section>
+            <section class="post-container-weather">
+                <h3>The Weather!</h3>
+                <div>
+                <object type="text/html" class="weather" data="https://www.clarin.com/clima" style="overflow:auto">
+                </object>   
+                </div>
+                <a href="https://www.clarin.com/clima" target="_blank" class="blogs-button">Leer más</a>
+            </section>
+    </main>
+
+{{!-- Footer --}}
+
+{{> footer }}
+
+</body>
+</html>
